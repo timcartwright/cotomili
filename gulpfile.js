@@ -43,7 +43,8 @@ bowerDir = 'bower_components/' ;
 jsSources = [
 	bowerDir + 'jquery/dist/jquery.js',
 	bowerDir + 'bootstrap-sass/assets/javascripts/bootstrap.js',	
-	'components/scripts/*.js'];
+	'components/scripts/*.js',
+	bowerDir + 'scrollmagic/scrollmagic/minified/ScrollMagic.min.js'];
 sassSources = ['components/sass/main.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = [outputDir + 'js/*.json'];

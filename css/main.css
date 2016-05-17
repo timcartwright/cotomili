@@ -7330,19 +7330,19 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 5.5em;
+  font-size: 5vw;
 }
 
 h2 {
-  font-size: 2.75em;
+  font-size: 2.75vw;
 }
 
 h3 {
-  font-size: 2.166em;
+  font-size: 2.166vw;
 }
 
 p {
-  font-size: 1.833em;
+  font-size: 1.375vw;
 }
 
 .content {
@@ -7378,10 +7378,47 @@ p {
   padding: 0 2.75em;
 }
 
+.final-image {
+  position: relative;
+  background-image: url("../images/pareo.jpg");
+  background-position: 50% 30%;
+  background-size: cover;
+}
+.final-image .footer {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  padding: 0 2.75em;
+}
+
 .intro-text {
   position: relative;
 }
 .intro-text .content {
   position: absolute;
   bottom: 10vh;
+}
+
+#pin1 h1 {
+  margin-top: 50px;
+}
+
+#step1, #step2, #step3, #step4, #step5, #step6 {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+#step1.active, #step2.active, #step3.active, #step4.active, #step5.active, #step6.active {
+  opacity: 1;
+}
+
+.trigger-spacer {
+  height: 40vh;
+}
+
+.spacer {
+  height: 200px;
+}
+
+.grey {
+  background-color: #a6b2b3;
 }
