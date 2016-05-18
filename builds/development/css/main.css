@@ -7434,13 +7434,18 @@ a:hover {
   }
 
   h3 {
-    font-size: 3vw;
+    font-size: 4vw;
     margin-bottom: 0.3vw;
     margin-top: 0.3vw;
   }
 
   p {
-    font-size: 2vw;
+    font-size: 2.66vw;
+  }
+
+  .intro-text .content {
+    left: 15px;
+    right: 15px;
   }
 
   .content, .footer {
