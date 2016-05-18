@@ -1,6 +1,8 @@
 @import 'bootstrap';
 @import 'fonts';
 
+$white: #fff;
+
 // General
 body, h1, h2, h3, h4, h5, h6, p {
   font-family: 'AmericanTypewriter';
@@ -21,6 +23,10 @@ h3 {
 
 p {
   font-size: 1.33vw;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .content {
@@ -64,6 +70,10 @@ p {
 
 .sueva-image {
   background-image: url('../images/sueva.jpg');
+
+  a {
+    color: $white;
+  }
 }
 
 // Steps
@@ -95,4 +105,8 @@ p {
 // Contact
 .pareo-image {
   background-image: url('../images/pareo.jpg');
+
+  a, a:hover, a:visited, a:active {
+    color: $white;
+  }
 }
