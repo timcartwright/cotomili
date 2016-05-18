@@ -1,6 +1,5 @@
 @import 'bootstrap';
 @import 'fonts';
-@import 'responsive';
 
 $white: #fff;
 
@@ -31,7 +30,7 @@ a:hover {
   text-decoration: none;
 }
 
-.content {
+.content, .footer {
   padding: 0 2.5vw;
 }
 
@@ -48,7 +47,6 @@ a:hover {
     position: absolute;
     bottom: 20px;
     color: #fff;
-    padding: 0 2.75em;
   }
 }
 
@@ -112,3 +110,5 @@ a:hover {
     color: $white;
   }
 }
+
+@import 'responsive';

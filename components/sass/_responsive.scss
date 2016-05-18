@@ -1,14 +1,32 @@
-// Small devices
-@media (max-width: 767px) {
-
-}
-
-// Medium devices
+// Medium devices eg tablet portrait
 @media (max-width: 991px) {
-
+  
 }
 
-// Large devices
-@media (max-width: 1199px) {
 
+// Small devices eg mobile
+@media (max-width: 767px) {
+  h1 {
+    font-size: 5.5vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+    margin-bottom: 0.3vw;
+    margin-top: 0.3vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  .content, .footer {
+    padding: 0;
+  }
 }
+
+

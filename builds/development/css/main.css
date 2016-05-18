@@ -7351,7 +7351,7 @@ a:hover {
   text-decoration: none;
 }
 
-.content {
+.content, .footer {
   padding: 0 2.5vw;
 }
 
@@ -7368,7 +7368,6 @@ a:hover {
   position: absolute;
   bottom: 20px;
   color: #fff;
-  padding: 0 2.75em;
 }
 
 .intro-text {
@@ -7423,4 +7422,28 @@ a:hover {
 }
 .pareo-image a, .pareo-image a:hover, .pareo-image a:visited, .pareo-image a:active {
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 5.5vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+    margin-bottom: 0.3vw;
+    margin-top: 0.3vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  .content, .footer {
+    padding: 0;
+  }
 }
