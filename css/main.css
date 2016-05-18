@@ -7366,30 +7366,24 @@ p {
   height: 100vh;
 }
 
-.splash-image {
+.image-background {
   position: relative;
-  background-image: url("../images/sueva.jpg");
   background-position: 50% 30%;
   background-size: cover;
 }
-.splash-image .footer {
+.image-background .footer {
   position: absolute;
   bottom: 20px;
   color: #fff;
   padding: 0 2.75em;
 }
 
-.final-image {
-  position: relative;
-  background-image: url("../images/pareo.jpg");
-  background-position: 50% 30%;
-  background-size: cover;
+.sueva-image {
+  background-image: url("../images/sueva.jpg");
 }
-.final-image .footer {
-  position: absolute;
-  bottom: 20px;
-  color: #fff;
-  padding: 0 2.75em;
+
+.pareo-image {
+  background-image: url("../images/pareo.jpg");
 }
 
 .intro-text {

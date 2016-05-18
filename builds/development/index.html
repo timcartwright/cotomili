@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cotomili</title>
+  <title>Cotomili Handmade Pareos</title>
   <link rel="stylesheet" href="css/main.css">
   <script src="js/script.js"></script>
 </head>
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-5 splash-image full-height">
+      <div class="col-md-5 image-background sueva-image full-height">
         <div class="content">
           <h1 class="site-title">COTOMILI</h1>
           <h2 class="site-sub-title">by Lara</h2>
@@ -88,7 +88,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-5 final-image full-height">
+      <div class="col-md-5 image-background pareo-image full-height">
         <div class="content">
           <h1 class="site-title">COTOMILI</h1>
           <h2 class="site-sub-title">by Lara</h2>
@@ -107,43 +107,31 @@
     </div>
   </div>
   <script>
-    // init controllers
-    var stickyController = new ScrollMagic.Controller();
-    var displayController = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
-
-    // build scenes
-    new ScrollMagic.Scene({triggerElement: "#sec1"})
-            .setClassToggle("#step1", "active") // add class toggle
-            .addTo(displayController);
-    new ScrollMagic.Scene({triggerElement: "#sec2"})
-            .setClassToggle("#step2", "active") // add class toggle
-            .addTo(displayController);
-    new ScrollMagic.Scene({triggerElement: "#sec3"})
-            .setClassToggle("#step3", "active") // add class toggle
-            .addTo(displayController);
-    new ScrollMagic.Scene({triggerElement: "#sec4"})
-            .setClassToggle("#step4", "active") // add class toggle
-            .addTo(displayController);
-    new ScrollMagic.Scene({triggerElement: "#sec5"})
-            .setClassToggle("#step5", "active") // add class toggle
-            .addTo(displayController);
-    new ScrollMagic.Scene({triggerElement: "#sec6"})
-            .setClassToggle("#step6", "active") // add class toggle
-            .addTo(displayController);
-
     $(function () {
-        var offset = ($(window).height() / 2) + 30;
-        var duration = ($(window).width() * 2) + 1500;
-        var scene = new ScrollMagic.Scene({triggerElement: "#pin-trigger", offset: offset, duration: duration})
-                .setPin("#pin1")
-                .addTo(stickyController);
+      // init controllers
+      var stickyController = new ScrollMagic.Controller();
+      var displayController = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
 
-        $(window).on("resize", function() {
-          // update offet and duration.
-          scene.offset(($(window).height() / 2) + 30);
-          scene.duration(($(window).width() * 2) + 1500);
-        });
+      // build scene for steps to appear
+      for (var i = 6; i >= 1; i--) {
+        new ScrollMagic.Scene({triggerElement: ("#sec" + i)})
+              .setClassToggle("#step" + i, "active") // add class toggle
+              .addTo(displayController);
+      };
+
+      // build scene for steps to be pinned
+      var offset = ($(window).height() / 2) + 30;
+      var duration = ($(window).width() * 2) + 1500;
+      var scene = new ScrollMagic.Scene({triggerElement: "#pin-trigger", offset: offset, duration: duration})
+              .setPin("#pin1")
+              .addTo(stickyController);
+
+      // update offet and duration when window resized
+      $(window).on("resize", function() {
+        scene.offset(($(window).height() / 2) + 30);
+        scene.duration(($(window).width() * 2) + 1500);
       });
+    });
   </script>
 </body>
 </html>
