@@ -7325,7 +7325,7 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
-body, p, h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h3, h4, h5, h6, p {
   font-family: 'AmericanTypewriter';
 }
 
@@ -7350,18 +7350,6 @@ p {
   padding: 0 2.75em;
 }
 
-.site-title {
-  margin-bottom: 0;
-}
-
-.site-sub-title {
-  margin-top: 0;
-}
-
-.page {
-  height: 100vh;
-}
-
 .full-height {
   height: 100vh;
 }
@@ -7378,20 +7366,24 @@ p {
   padding: 0 2.75em;
 }
 
-.sueva-image {
-  background-image: url("../images/sueva.jpg");
-}
-
-.pareo-image {
-  background-image: url("../images/pareo.jpg");
-}
-
 .intro-text {
   position: relative;
 }
 .intro-text .content {
   position: absolute;
   bottom: 10vh;
+}
+
+.site-title {
+  margin-bottom: 0;
+}
+
+.site-sub-title {
+  margin-top: 0;
+}
+
+.sueva-image {
+  background-image: url("../images/sueva.jpg");
 }
 
 #pin1 h1 {
@@ -7416,4 +7408,8 @@ p {
 
 .grey-green {
   background-color: #c7d1ca;
+}
+
+.pareo-image {
+  background-image: url("../images/pareo.jpg");
 }
