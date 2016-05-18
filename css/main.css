@@ -7340,6 +7340,7 @@ h2 {
 h3 {
   font-size: 2vw;
   margin-bottom: 0.3vw;
+  margin-top: 0.3vw;
 }
 
 p {
@@ -7351,7 +7352,7 @@ a:hover {
 }
 
 .content {
-  padding: 0 2.75em;
+  padding: 0 2.5vw;
 }
 
 .full-height {
