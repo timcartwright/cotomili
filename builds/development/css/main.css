@@ -7410,7 +7410,7 @@ a:hover {
 }
 
 .spacer {
-  height: 200px;
+  height: 12vw;
 }
 
 .grey-green {
@@ -7424,7 +7424,7 @@ a:hover {
   color: #fff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 5.5vw;
   }

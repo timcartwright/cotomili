@@ -124,7 +124,7 @@
 
       // build scene for steps to be pinned
       var offset = ($(window).height() / 2) + 30;
-      var duration = ($(window).width() * 2) + 1500;
+      var duration = ($(window).width() * 3) + 150;
       var scene = new ScrollMagic.Scene({triggerElement: "#pin-trigger", offset: offset, duration: duration})
               .setPin("#pin1")
               .addTo(stickyController);
@@ -132,7 +132,7 @@
       // update offet and duration when window resized
       $(window).on("resize", function() {
         scene.offset(($(window).height() / 2) + 30);
-        scene.duration(($(window).width() * 2) + 1500);
+        scene.duration(($(window).width() * 3) + 150);
       });
     });
   </script>
