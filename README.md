@@ -1,3 +1,3 @@
-# Tim's Gulp Workflow
+# Cotomili by Lara
 
-Template
+Website for Lara using bootstrap and scrollmagic
